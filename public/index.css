@@ -367,7 +367,7 @@ table {
     width: 18px;
 }
 
-.td1 {
+.td1, #brandFilter, #descriptionSelect, #tagsSelect, #izan, #filt, button {
     font-size: 0.8rem;
 }
 

@@ -1,5 +1,3 @@
-
-
 function filterTable() {
     var brandFilter = document.getElementById("brandFilter").value;
     var descriptionFilter = document.getElementById("descriptionSelect").value;

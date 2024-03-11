@@ -9,6 +9,7 @@
     <title>InnovateHub</title>
 </head>
 
+
 <!-- External stylesheet links -->
 <link rel="stylesheet" href="./public/index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -110,7 +111,7 @@
         <div class="nav">
             <i class="fa fa-refresh" aria-hidden="true" style="margin:0px 10px 0px 20px; cursor: pointer;"></i>
             <select id="brandFilter" onchange="filterTable()">
-                <option value="volvo" disabled selected >All brands<i class="fa fa-cog" aria-hidden="true"></i></option>
+                <option value="volvo"  disabled selected >All brands<i class="fa fa-cog" aria-hidden="true"></i></option>
                 <option value="Wix">Wix</option>
                 <option value="Shopify">Shopify</option>
                 <option value="MailChimp">MailChimp</option>
@@ -121,7 +122,7 @@
 
             </select>
             <select id="descriptionSelect" onchange="filterTable()">
-                <option value="volvo">Desk</option>
+                <option value="volvo" >Desk</option>
                 <option value="Swift Power Laptop">Swift</option>
                 <option value="Elegant Tech Watch">Elegant</option>
                 <option value="Nourish pro Blender">Nourish</option>
@@ -129,15 +130,15 @@
                 <option value="Active footer">Footer</option>
             </select>
             <select id="tagsSelect" onchange="filterTable()">
-                <option value="volvo">Tags</option>
+                <option value="volvo"  >Tags</option>
                 <option value="#SaaS">#SaaS</option>
                 <option value="#UI">#UI</option>
                 <option value="#Cloud">#Cloud</option>
             </select>
             <i class="fa fa-sort-alpha-asc" id="izan" onclick="sortTable('brand')"><span class="td1"> Sort</span></i>
-            <i class="fa fa-filter" aria-hidden="true"  onclick="filterMeetings()"><span> Filter</i>
-            <i class="fa fa-plus-square-o" aria-hidden="true" ><span> <a href="https://meet.google.com/" target="_blank" style="text-decoration: none;">Meet</a></i>
-            <i class="fa fa-cloud-upload" aria-hidden="true" ><span> Import/Export</i>
+            <i class="fa fa-filter" aria-hidden="true" id="filt"  onclick="filterMeetings()"><span> Filter</i>
+            <i class="fa fa-plus-square-o" aria-hidden="true" id="filt"><span> <a href="https://meet.google.com/" target="_blank" style="text-decoration: none;">Meeting</a></i>
+            <i class="fa fa-cloud-upload" aria-hidden="true" id="filt"><span> Import/Export</i>
         </div>
         <div class="content">
             <table id="myTable">
