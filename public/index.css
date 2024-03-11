@@ -104,7 +104,7 @@ img {
 
 #main {
     
-    border: px solid red;
+    /* border: px solid red; */
     margin: -10px 0px 0px -35px;
 }
 
@@ -172,7 +172,7 @@ img {
 #details {
     
     border: px solid rgb(234, 234, 234);
-    height: 200px;
+    height: 220px;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -323,7 +323,7 @@ td {
 
 .content {
     /* border: 2px solid crimson; */
-    height: 340px;
+    height: 360px;
     margin-bottom: 40px;
 
 }
