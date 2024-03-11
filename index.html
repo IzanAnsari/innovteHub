@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Document title -->
+    <title>InnovateHub</title>
+</head>
+
+<!-- External stylesheet links -->
+<link rel="stylesheet" href="./views/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+     <!-- Menu section -->
+    <menu>
+        <!-- Profile section -->
+        <div class="profile">
+            <img src="./asset/images.jpeg" alt="">
+            <div class="box1">
+                <p id="p1">INC</p>
+                <p id="p2">InvativeHub</p>
+            </div>
+            <img src="./asset/izan 0.2.jpg" alt="" id="pro1">
+        </div>
+        <!-- Main content section -->
+        <div id="main">
+            <div class="text">
+                 <!-- Team sections -->
+                <i class="fas fa-pen-fancy" id="i1"> Designing Team</i> <br>
+                <i class="fas fa-bullhorn" id="i1"> Marketing Team</i> <br>
+                <i class="fas fa-code" id="i1"> Development Team</i> <br>
+                <div id="create">
+                    <i class="fa fa-plus" id="i4"></i><span class="s1"> Create Team</span>
+                </div>
+                <p id="p5">Folders<i class="fa fa-plus folder"></i></p>
+                <div id="details">
+                    <details id="details1">
+                        <summary>product <img src="./asset/free-file-icon-1453-thumb.png" alt="" class="f1"></summary>
+                        <p class="p6">Roadmap</p>
+                        <p class="p6">Feedback</p>
+                        <p class="p6">Performance</p>
+                        <p class="p6">Team</p>
+                        <p class="p6">Analytics</p>
+                        <i class="fa fa-plus i13" id="i15"></i><span style="font-size: 0.8rem;"> Add New Subs</span>
+                    </details>
+                    <details class="details2">
+                        <summary>Sales <img src="./asset/free-file-icon-1453-thumb.png" alt="" class="f2"></summary>
+                        <p class="p6">Roadmap</p>
+                        <p class="p6">Feedback</p>
+                        <p class="p6">Performance</p>
+                        <p class="p6">Team</p>
+                        <p class="p6">Analytics</p>
+                        <i class="fa fa-plus i13" id="i15"></i><span style="font-size: 0.8rem;"> Add New Subs</span>
+
+                    </details>
+                    <details class="details2">
+                        <summary>Design <img src="./asset/free-file-icon-1453-thumb.png" alt="" class="f3"></summary>
+                        <p class="p6">Roadmap</p>
+                        <p class="p6">Feedback</p>
+                        <p class="p6">Performance</p>
+                        <p class="p6">Team</p>
+                        <p class="p6">Analytics</p>
+                        <i class="fa fa-plus i13" id="i15"></i><span style="font-size: 0.8rem;"> Add New Subs</span>
+
+                    </details>
+                    <details class="details2">
+                        <summary>Office <img src="./asset/free-file-icon-1453-thumb.png" alt="" class="f4"></summary>
+                        <p class="p6">Roadmap</p>
+                        <p class="p6">Feedback</p>
+                        <p class="p6">Performance</p>
+                        <p class="p6">Team</p>
+                        <p class="p6">Analytics</p>
+                        <i class="fa fa-plus i13" id="i15"></i><span style="font-size: 0.8rem;"> Add New Subs</span>
+
+                    </details>
+                    <details class="details2">
+                        <summary>Legal <img src="./asset/free-file-icon-1453-thumb.png" alt="" class="f5"></summary>
+                        <p class="p6">Roadmap</p>
+                        <p class="p6">Feedback</p>
+                        <p class="p6">Performance</p>
+                        <p class="p6">Team</p>
+                        <p class="p6">Analytics</p>
+                        <i class="fa fa-plus i2"></i><span class="span3"> Add New Subs</span>
+                    </details>
+                </div>
+                <i class="fa fa-user-plus" id="i3"> Invite Teammates</i>
+                <br>
+                <i class="fa fa-question-circle" id="i7"> Help and first
+                    steps</i> <br>
+                <input type="text" placeholder="7 Days left on trail" id="input"><button id="button">Add
+                    Billing</button>
+            </div>
+        </div>
+    </menu>
+    <main>
+        <nav>
+            <p id="p4">Products</p>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search..." oninput="searchTable()">
+                <!-- Use Font Awesome search icon -->
+                <i class="search-icon fas fa-search"></i>
+            </div>
+            <i class="far fa-comments" aria-hidden="true"></i>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </nav>
+        <div class="nav">
+            <i class="fa fa-refresh" aria-hidden="true" style="margin:0px 10px 0px 20px; cursor: pointer;"></i>
+            <select id="brandFilter" onchange="filterTable()">
+                <option value="volvo" disabled selected >All brands<i class="fa fa-cog" aria-hidden="true"></i></option>
+                <option value="Wix">Wix</option>
+                <option value="Shopify">Shopify</option>
+                <option value="MailChimp">MailChimp</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Disney">Disney</option>
+                <option value="InterCom">InterCom</option>
+                <option value="Microsoft">Microsoft</option>
+
+            </select>
+            <select id="descriptionSelect" onchange="filterTable()">
+                <option value="volvo">Desk</option>
+                <option value="Swift Power Laptop">Swift</option>
+                <option value="Elegant Tech Watch">Elegant</option>
+                <option value="Nourish pro Blender">Nourish</option>
+                <option value="Sleek Laptop">Laptop</option>
+                <option value="Active footer">Footer</option>
+            </select>
+            <select id="tagsSelect" onchange="filterTable()">
+                <option value="volvo">Tags</option>
+                <option value="#SaaS">#SaaS</option>
+                <option value="#UI">#UI</option>
+                <option value="#Cloud">#Cloud</option>
+            </select>
+            <i class="fa fa-sort-alpha-asc" id="izan" onclick="sortTable('brand')"><span class="td1"> Sort</span></i>
+            <i class="fa fa-filter" aria-hidden="true"  onclick="filterMeetings()"><span> Filter</i>
+            <i class="fa fa-plus-square-o" aria-hidden="true" ><span> <a href="https://meet.google.com/" target="_blank" style="text-decoration: none;">Meet</a></i>
+            <i class="fa fa-cloud-upload" aria-hidden="true" ><span> Import/Export</i>
+        </div>
+        <div class="content">
+            <table id="myTable">
+                <tr>
+                    <th id="th1" class="td1 i10 plus"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">Brand<i
+                            class="fa fa-plus" id="left"></i></th>
+                    <th class="th">Description</th>
+                    <th class="th">Members</th>
+                    <th class="th">Categories</th>
+                    <th class="th">tags</th>
+                    <th class="th">Next Meeting</th>
+                    <th class="th"><i class="fa fa-plus i11"></i></th>
+                </tr>
+               
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/710175e98adf7f1d4068bd11858b86d6.jpg" alt="" class="img2">
+                        Wix
+                    </td>
+                    <td class="td1">Swift Power Laptop kl</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                        <img src="./asset/img2.jpeg" alt="" class="images1">
+                        <img src="./asset/img5.jpeg" alt="" class="images1">
+                        <img src="./asset/img4.jpeg" alt="" class="images1">
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(132, 0, 255); background-color: rgb(205, 172, 236);">Automation</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#DigitalTranfromation</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(30, 89, 0); background-color: rgb(188, 247, 172);">in
+                            30 minutes</span>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/shopify.webp" alt="" class="img2">
+                        Shopify
+                    </td>
+                    <td class="td1">Elegant Tech Watch</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                        <img src="./asset/img4.jpeg" alt="" class="images1">
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(132, 75, 0); background-color: rgb(235, 212, 154);">E-Commerce</span>
+                        <span class="text2"
+                            style="color: rgb(154, 147, 0); background-color: rgb(255, 251, 139);">B2B</span>
+                    </td>
+
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#OnlineShopping</span>
+                        <span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#Di</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(0, 148, 202); background-color: rgb(141, 213, 255);">Tomorrow</span>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/mail.png" alt="" class="img2">
+                        MailChimp
+                    </td>
+                    <td class="td1">Nourish Pro Blender</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                        <img src="./asset/img2.jpeg" alt="" class="images1">
+                        <img src="./asset/img5.jpeg" alt="" class="images1">
+                        <img src="./asset/img7.jpeg" alt="" class="images1">
+                        <img src="./asset/img6.jpeg" alt="" class="images1">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(0, 132, 11); background-color: rgb(142, 255, 170);">SAAS</span>
+                        <span class="text2"
+                            style="color: rgb(154, 147, 0); background-color: rgb(255, 250, 92);">Mobile</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#TechInovation</span>
+                        <span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#Cloud</span>
+                    </td>
+
+                    <td><span class="text2"
+                            style="color: rgb(0, 148, 202); background-color: rgb(141, 213, 255);">Tomorrow</span>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/paypal.png" alt="" class="img2">
+                        PayPal
+                    </td>
+                    <td class="td1">FlexFit Active Shoes</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                        <img src="./asset/img2.jpeg" alt="" class="images1">
+                        <img src="./asset/img5.jpeg" alt="" class="images1">
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(0, 147, 34); background-color: rgb(144, 255, 166);">Marketplace</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#BusinessSaleOnline</span>
+
+
+                    <td><span class="text2"
+                            style="color: rgb(0, 167, 61); background-color: rgb(131, 255, 162);">in
+                            6 hours</span>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/dis.png" alt="" class="img2">
+                        Disney
+                    </td>
+                    <td class="td1">Active Footwear Run</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(148, 138, 0); background-color: rgb(255, 255, 124);">B2B</span>
+                        <span class="text2"
+                            style="color: rgb(154, 157, 0); background-color: rgb(255, 255, 195);">B2C</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#SmartFinance</span>
+                        <span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#SaaS</span>
+                    <td><span class="text2"
+                            style="color: rgb(182, 0, 0); background-color: rgb(255, 174, 174);">no
+                            contact</span>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/inter.png" alt="" class="img2">
+                        InterCom
+                    </td>
+                    <td class="td1">Soft Luxury Life Ch</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                        <img src="./asset/img2.jpeg" alt="" class="images1">
+                        <img src="./asset/img5.jpeg" alt="" class="images1">
+                        <img src="./asset/img7.jpeg" alt="" class="images1">
+                        <img src="./asset/img6.jpeg" alt="" class="images1">
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(0, 134, 146); background-color: rgb(150, 239, 255);">Technology</span>
+                        <span class="text2"
+                            style="color: rgb(0, 157, 5); background-color: rgb(174, 255, 172);">SaaS</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#BusinessPartenerShip</span>
+
+                    <td><span class="text2"
+                            style="color: rgb(0, 124, 25); background-color: rgb(190, 255, 193);">in
+                            1 Hour</span>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/google.png" alt="" class="img2">
+                        Google
+                    </td>
+                    <td class="td1">Eco Chic</td>
+                    <td> <img src="./asset/img5.jpeg" alt="" class="images">
+                        <img src="./asset/img7.jpeg" alt="" class="images1">
+                        <img src="./asset/img6.jpeg" alt="" class="images1">
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(0, 0, 154); background-color: rgb(195, 194, 255);">Finance</span>
+                        <span class="text2"
+                            style="color: rgb(132, 0, 255); background-color: rgb(205, 172, 236);">Automation</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#Logistech</span>
+                        <span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#UI</span>
+                    <td><span class="text2"
+                            style="color: rgb(59, 59, 59); background-color: rgb(242, 242, 242);">next
+                            month</span>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/micro.png" alt="" class="img2">
+                        Microsoft
+                    </td>
+                    <td class="td1">Sleek Laptop</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                        <img src="./asset/img2.jpeg" alt="" class="images1">
+                        <img src="./asset/img5.jpeg" alt="" class="images1">
+                        <img src="./asset/img7.jpeg" alt="" class="images1">
+                        <img src="./asset/img6.jpeg" alt="" class="images1">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(0, 105, 162); background-color: rgb(168, 230, 255);">Publishing</span>
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">#B2CMarketing</span>
+
+                    <td><span class="text2"
+                            style="color: rgb(182, 0, 0); background-color: rgb(255, 174, 174);">no
+                            contact</span>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td1"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <img src="./asset/inv.svg" alt="" class="img2">
+                        Invision
+                    </td>
+                    <td class="td1">Active Footwear</td>
+                    <td class="td1">
+                        <img src="./asset/img1.jpeg" alt="" class="images">
+                        <img src="./asset/img3.webp" alt="" class="images1">
+                        <img src="./asset/img2.jpeg" alt="" class="images1">
+                        <img src="./asset/img5.jpeg" alt="" class="images1">
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(185, 0, 188); background-color: rgb(255, 177, 255);">Webservice</span>
+
+                    </td>
+                    <td><span class="text2"
+                            style="color: rgb(60, 56, 56); background-color: rgb(227, 227, 227);">APIntegration</span>
+
+                    <td><span class="text2"
+                            style="color: rgb(0, 148, 202); background-color: rgb(141, 213, 255);">Tomorrow</span>
+                    </td>
+                    <td></td>
+                </tr>
+              
+                <tr>
+                    <th class="td1 td3">
+                        10 Count
+                    </th>
+                    <th>
+                        <i class="fa fa-plus" id="i14"> Add Calculation</i>
+                    </th>
+                    <th>
+                        <i class="fa fa-plus" id="i14"> Add Calculation</i>
+                    </th>
+                    <th>
+                        <i class="fa fa-plus" id="i14"> Add Calculation</i>
+                    </th>
+                    <th>
+                        <i class="fa fa-plus" id="i14"> Add Calculation</i>
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+            </table>
+        </div>
+        <footer >
+            <div style="margin: auto;">
+                <button id="btn1"><span id="span5">3</span> Selected</button>
+                <button>Achrive</button>
+                <button>Delete</button>
+                <select id="selected">
+                    <option value="volvo">More</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </footer>
+    </main>
+
+</body>
+<script src="./views/index.js"></script>
+<script src="./views/in.j"></script>
+</html>
