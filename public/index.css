@@ -11,7 +11,7 @@ menu {
     padding-top: 9px;
     padding-bottom: 9px;
     /* padding: 9px 42px; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(239, 239, 239, 0.2), 0 6px 20px 0 rgba(204, 204, 204, 0.19);
     /* height: 475px; */
     border-radius: 10px;
     margin: 0px 8px 0px 0px;
@@ -28,6 +28,11 @@ menu {
     margin: 0px 0px 20px -40px;
 }
 
+a {
+    color: inherit; /* This will inherit the color from the parent element */
+    text-decoration: none; /* This will remove the underline */
+}
+
 #pro1 {
     cursor: pointer;
     margin-left: 22%;
@@ -39,7 +44,7 @@ menu {
 main {
     /* border: 1px solid blue; */
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     width: 84%;
 }
 
@@ -109,7 +114,7 @@ img {
 }
 
 #i1 {
-
+    cursor: pointer;
     margin-bottom: 10px;
     font-size: 0.8rem;
 }
@@ -117,7 +122,7 @@ img {
 #create {
     cursor: pointer;
 
-    border: 1px solid black;
+    border: 1px solid rgb(203, 203, 203);
     padding: 2px 2px;
     width: 90%;
     border-radius: 5px;
@@ -136,7 +141,7 @@ img {
 }
 .f1{
     cursor: pointer;
-    width: 8%; height: 0.8rem; margin: 3px 0px 0px 57%;
+    width: 8%; height: 0.8rem; margin: 3px 0px 0px 58%;
 }
 .f2{
     cursor: pointer;
@@ -166,8 +171,8 @@ img {
 
 #details {
     
-    border: px solid black;
-    height: 170px;
+    border: px solid rgb(234, 234, 234);
+    height: 200px;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -238,10 +243,11 @@ nav {
     display: flex;
     flex-direction: row;
     margin: 8px 0px 15px 0px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 1px 0 rgba(147, 147, 147, 0.2), 0 0px 1px 0 rgba(234, 234, 234, 0.19);
 }
 
 select {
+    border: 1px solid rgb(234, 234, 234);
     cursor: pointer;
     margin: 0px 4px
 }
@@ -255,7 +261,7 @@ select {
 #izan {
     cursor: pointer;
     font-size: 12px;
-    border: 1px solid black;
+    border: 1px solid rgb(234, 234, 234);
     height: 17px;
     width: 50px;
     margin: 0px 4px 0px 10px;
@@ -269,7 +275,7 @@ select {
 .fa-filter {
     cursor: pointer;
     font-size: 12px;
-    border: 1px solid black;
+    border: 1px solid rgb(234, 234, 234);
     height: 17px;
     width: 60px;
     margin: 0px 4px;
@@ -278,7 +284,7 @@ select {
 .fa-plus-square-o {
     font-size: 16px;
     padding-left: 3px;
-    border: 1px solid black;
+    border: 1px solid rgb(234, 234, 234);
     height: 17px;
     width: 60px;
     margin: 0px 4px;
@@ -289,7 +295,7 @@ select {
     cursor: pointer;
     font-size: 16px;
     padding-left: 3px;
-    border: 1px solid black;
+    border: 1px solid rgb(234, 234, 234);
     height: 17px;
     width: 120px;
     margin: 0px 4px;
@@ -310,14 +316,14 @@ select {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid rgb(239, 239, 239);
     /* padding: -10px -16px; */
     border-collapse: collapse;
 }
 
 .content {
     /* border: 2px solid crimson; */
-    height: 310px;
+    height: 340px;
     margin-bottom: 40px;
 
 }
@@ -383,7 +389,7 @@ table {
 
 .text2 {
     font-size: 0.8rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 10px;
     margin-left: 2px;
     padding: 3px 3px;
@@ -428,8 +434,8 @@ table {
 
 #span5 {
     cursor: pointer;
-    border: 1px solid black;
-    padding: 1px 5px;
+    /* border: 1px solid black; */
+    padding: 1px 4px;
     background-color: black;
     color: white;
 }
@@ -452,6 +458,6 @@ button{
     }
 
     main {
-        width: 100%; /* Adjust the width for smaller screens */
+        display: none;
     }
 }
