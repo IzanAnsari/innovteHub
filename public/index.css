@@ -302,11 +302,15 @@ select {
     margin: 0% 0% 0% 0%;
 }
 
-.fa-cog,
+
 .fa-comments {
     cursor: pointer;
     margin: 1.5% 0% 0% 01%;
 
+}
+.fa-cog{
+    cursor: pointer;
+    margin: 15px 0px 0px 10px;
 }
 
 #p4 {
